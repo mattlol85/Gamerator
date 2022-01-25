@@ -1,0 +1,28 @@
+body{
+	margin: 0;
+}
+
+.navbar{
+	display: flex;
+	background-color: #242626;
+	color: white;
+	padding: 30px;
+}
+.Logo{
+	color: red;
+	font-size: 24px;
+
+	
+}
+.home{
+	font-size: 20px;
+	margin-right: auto;
+	margin-left: 30px;
+	text-decoration: none;
+	color: white;
+}
+.LoginSignUp {
+	font-size: 20px;
+	text-decoration: none;
+	color: white;
+}

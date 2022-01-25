@@ -1,0 +1,41 @@
+.CardDisplay{
+	display: flex;
+	flex: wrap;
+
+
+}
+.gameCardDiv{
+	text-align: center;
+	margin: 10px;
+	width: 25%;
+	height: auto;
+	border-radius: 12px;
+	border-width: 1px;
+	background-color: black;
+	color: #D74646;
+	padding: 10px;
+	
+   
+}
+.imgCard{
+	width: 75%;
+
+
+}
+.cardButton {
+	padding: 10px;
+	border-radius: 12px;
+	border: none;
+	transition-duration: .3s;
+	cursor: pointer;
+
+	
+}
+
+.cardButton:hover {
+	color: red;
+	background-color: black;
+}
+.cardPlacement{
+
+}
