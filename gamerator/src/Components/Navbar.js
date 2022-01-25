@@ -6,12 +6,28 @@ export default function NavBar() {
   return (
     <nav className="navbar">
       <div className="Logo"> Welcome to GameRater</div>
-      <Link className="home" to="/">
+      
+      <Link className="action" to="/Action">
+        Action
+      </Link >
+
+      <Link className="adventure" to="/Adventure">
+        Adventure
+      </Link >
+
+      <Link className="indie" to="/Indie">
+        Indie
+      </Link >
+
+      <Link className="shooter" to="Shooter">
+        Shooter
+      </Link >
+
+      <Link className="home" to="/home">
         Home
       </Link >
-      <Link className="LoginSignUp" to="/login">
-        Login/SignUp
-      </Link>
+      
+      
       
     </nav>
   );

@@ -4,6 +4,7 @@ body{
 
 .navbar{
 	display: flex;
+	justify-content: space-between;
 	background-color: #242626;
 	color: white;
 	padding: 30px;
@@ -14,15 +15,52 @@ body{
 
 	
 }
+
 .home{
 	font-size: 20px;
-	margin-right: auto;
-	margin-left: 30px;
 	text-decoration: none;
 	color: white;
+	
 }
-.LoginSignUp {
-	font-size: 20px;
-	text-decoration: none;
-	color: white;
+
+
+.action{
+ font-size: 20px;
+ text-decoration: none;
+ color: white;
+}
+
+.adventure{
+ font-size: 20px;
+ text-decoration: none;
+ color: white;
+}
+.indie{
+ font-size: 20px;
+ text-decoration: none;
+ color: white;
+}
+.shooter{
+ font-size: 20px;
+ text-decoration: none;
+ color: white;
+}
+
+.home:Hover{
+	color: red;
+}
+
+
+.action:hover{
+ color: red;
+}
+
+.adventure:hover{
+ color: red;
+}
+.indie:hover{
+ color: red;
+}
+.shooter:hover{
+color: red;
 }
