@@ -12,7 +12,6 @@ export default function NavBar() {
       <Link className="LoginSignUp" to="/login">
         Login/SignUp
       </Link>
-      
     </nav>
   );
 }
