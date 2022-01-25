@@ -11,14 +11,13 @@ import GameCard from "./components/GameCard";
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <GameCard />
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-      <Routes>
-        <Route path="/login" element={<Login />} />
-      </Routes>
+    <Navbar/>
+    <Routes>
+      <Route path= "/home" element={<Home />}/> 
+    </Routes>
+    <Routes>
+      <Route path= "/login" element={<Login />}/> 
+    </Routes>
     </div>
   );
 }
