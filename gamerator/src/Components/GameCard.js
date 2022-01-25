@@ -21,7 +21,7 @@ export default function GameCard() {
 
     {games.map((games)=>{
       return <div key={games.id} className="gameCardDiv">
-        <h1>{games.gameName} </h1>
+        <h2 className="header">{games.gameName} </h2>
         <img src={games.backgroundImg} className="imgCard"/> <br/>
         <div className="cardPlacement">
         <button className="cardButton"> Vote </button>
