@@ -11,6 +11,7 @@ export default function GameCard() {
     .then(
       (result) => {
         setGames(result);
+        console.log(result)
 
       },
       )
@@ -21,8 +22,8 @@ export default function GameCard() {
 
     {games.map((games)=>{
       return <div key={games.id} className="gameCardDiv">
-        <h1>{games.gameName} </h1>
-        <img src={games.backgroundImg} className="imgCard"/> <br/>
+       <img src={games.backgroundImg} className="imgCard"/> <br/>
+        <h2 className="header">{games.gameName} </h2>
         <div className="cardPlacement">
         <button className="cardButton"> Vote </button>
         </div>
