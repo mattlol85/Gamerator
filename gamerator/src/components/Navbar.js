@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../Styles/Navbar.css";
+import "./styles/Navbar.css";
 
-export default function NavBar() {
+export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="Logo"> Welcome to GameRater</div>
@@ -26,7 +26,6 @@ export default function NavBar() {
       <Link className="home" to="/home">
         Home
       </Link >
-      
     
     </nav>
   );

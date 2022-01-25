@@ -1,5 +1,5 @@
 import React, { useState,useEffect } from 'react';
-import "../Styles/GameCard.css"; 
+import "./styles/GameCard.css"; 
 
 
 

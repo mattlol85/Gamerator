@@ -4,8 +4,8 @@ import { Routes, Route } from "react-router-dom";
 import GoogleLogin from 'react-google-login';
 
 import Navbar from "./components/Navbar";
-import Home from "./components/home";
-import Login from "./components/login";
+import Home from "./components/Home";
+import Login from "./components/Login";
 import GameCard from "./components/GameCard";
 
 function App() {
