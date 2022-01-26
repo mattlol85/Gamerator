@@ -25,15 +25,14 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<StartPage />}></Route>
-        <Route path="/home" element={<><Navbar /><Home /></>} />
-        <Route path="/action" element={<><Navbar /><Action /></>} />
-        <Route path="/adventure" element={<><Navbar /><Adventure /></>} />
-        <Route path="/indie" element={<><Navbar /><Indie /></>} />
-        <Route path="/shooter" element={<><Navbar /><Shooter /></>} />
-        <Route path="/rpg" element={<><Navbar /><RPG /></>} />
+        <Route path="/home" element={<><Navbar /><Home /><Footer /></>} />
+        <Route path="/action" element={<><Navbar /><Action /><Footer /></>} />
+        <Route path="/adventure" element={<><Navbar /><Adventure /><Footer /></>} />
+        <Route path="/indie" element={<><Navbar /><Indie /><Footer /></>}/>
+        <Route path="/shooter" element={<><Navbar /><Shooter /><Footer /></>} />
+        <Route path="/rpg" element={<><Navbar /><RPG /><Footer /></>} />
         <Route path="/login" element={<Login />} />
       </Routes>
-      <Footer />
     </div>
   );
 }
