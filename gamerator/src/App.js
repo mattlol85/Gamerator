@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Login from "./components/Login";
 import StartPage from "./components/StartPage";
-import GameCard from "./components/GameCard";
+import GameCardContainer from "./components/GameCardContainer";
 import Action from "./components/Action";
 import Adventure from "./components/Adventure";
 import Indie from "./components/Indie"
