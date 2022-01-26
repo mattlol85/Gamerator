@@ -1,6 +1,6 @@
-import React from 'react';
+import React,{useState,setState} from 'react';
 import ReactDOM from 'react-dom';
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate} from "react-router-dom";
 import GoogleLogin from 'react-google-login';
 //importing components from Components Folder
 import Navbar from "./components/Navbar";
@@ -19,20 +19,20 @@ import Footer from "./components/Footer";
 
 
 function App() {
-  //userState
-  //isLoggedIn
-  //LogInCheck
+
+const [loggedIn,SetLoginStatus] = useState(true)
+
   return (
     <div className="App">
       <Routes>
         <Route path="/" element={<StartPage />}></Route>
         <Route path="/home" element={<><Navbar /><Home /></>} />
-        <Route path="/action" element={<><Navbar /><Action /></>} />
-        <Route path="/adventure" element={<><Navbar /><Adventure /></>} />
-        <Route path="/indie" element={<><Navbar /><Indie /></>} />
-        <Route path="/shooter" element={<><Navbar /><Shooter /></>} />
-        <Route path="/rpg" element={<><Navbar /><RPG /></>} />
-        <Route path="/leaderboard" element={<><Navbar /><Leaderboard /></>} />
+        <Route path="/action" element={!loggedIn?<Navigate to="/login"/>:<><Navbar /><Action /></>} />
+        <Route path="/adventure" element={!loggedIn?<Navigate to="/login"/>:<><Navbar /><Adventure /></>} />
+        <Route path="/indie" element={!loggedIn?<Navigate to="/login"/>:<><Navbar /><Indie /></>} />
+        <Route path="/shooter" element={!loggedIn?<Navigate to="/login"/>:<><Navbar /><Shooter /></>} />
+        <Route path="/rpg" element={!loggedIn?<Navigate to="/login"/>:<><Navbar /><RPG /></>} />
+        <Route path="/leaderboard" element={!loggedIn?<Navigate to="/login"/>:<><Navbar /><Leaderboard /></>} />
         <Route path="/login" element={<Login />} />
       </Routes>
       <Footer />
