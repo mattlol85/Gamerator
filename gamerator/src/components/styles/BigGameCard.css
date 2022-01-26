@@ -8,6 +8,11 @@
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     display: flex;
+    margin: 0 auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 #imageDiv{
     
@@ -64,3 +69,4 @@
     position: absolute;
     bottom: 0;
 }
+

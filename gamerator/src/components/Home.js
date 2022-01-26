@@ -11,7 +11,6 @@ export default function Home() {
         <div className="homePage">
             <h1 id="homeTitle"> Home</h1>
             <GameCard />
-            <BigGameCard />
         </div>
     )
 }

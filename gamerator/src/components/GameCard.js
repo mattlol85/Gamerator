@@ -1,6 +1,6 @@
 import React, { useState,useEffect } from 'react';
 import "./styles/GameCard.css"; 
-
+import BigGameCard from './BigGameCard';
 
 
 export default function GameCard() {
@@ -25,7 +25,7 @@ export default function GameCard() {
        <img src={games.backgroundImg} className="imgCard"/> <br/>
         <h2 className="header">{games.gameName} </h2>
         <div className="cardPlacement">
-        <button className="cardButton"> Vote </button>
+        <BigGameCard/>
         </div>
 
       </div>

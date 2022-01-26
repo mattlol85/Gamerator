@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import "./styles/BigGameCard.css";
-
+import Popup from 'reactjs-popup';
 
 
 export default function BigGameCard() {
@@ -15,8 +15,13 @@ export default function BigGameCard() {
     //       },
     //       )
     //   }, [])
+    
+    const contentStyle = {
+        all: "revert",
+      };
 
     return (
+        <Popup trigger={<button> Vote</button>} contentStyle={contentStyle}>
         <div class="bigCard">
 
             <div id='col'>
@@ -44,6 +49,7 @@ export default function BigGameCard() {
             </div>
 
         </div>
+        </Popup>
     );
 }
 
