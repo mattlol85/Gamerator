@@ -8,6 +8,7 @@ import Home from "./components/Home";
 import Login from "./components/Login";
 import StartPage from "./components/StartPage";
 import GameCard from "./components/GameCard";
+import Leaderboard from "./components/Leaderboard"
 import Action from "./components/Action";
 import Adventure from "./components/Adventure";
 import Indie from "./components/Indie"
@@ -31,6 +32,7 @@ function App() {
         <Route path="/indie" element={<><Navbar /><Indie /></>} />
         <Route path="/shooter" element={<><Navbar /><Shooter /></>} />
         <Route path="/rpg" element={<><Navbar /><RPG /></>} />
+        <Route path="/leaderboard" element={<><Navbar /><Leaderboard /></>} />
         <Route path="/login" element={<Login />} />
       </Routes>
       <Footer />
