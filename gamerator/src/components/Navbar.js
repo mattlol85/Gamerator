@@ -1,11 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import "../Styles/Navbar.css";
+import GameCard from "./GameCard"
 
 export default function NavBar() {
+
   return (
     <nav className="navbar">
-      <div className="Logo"> Welcome to GameRater</div>
+      <div className="Logo">GameRater</div>
       
       <Link className="action" to="/Action">
         Action
@@ -21,6 +23,10 @@ export default function NavBar() {
 
       <Link className="shooter" to="Shooter">
         Shooter
+      </Link >
+
+      <Link className="rpg" to="Rpg">
+        RPG
       </Link >
 
       <Link className="home" to="/home">
