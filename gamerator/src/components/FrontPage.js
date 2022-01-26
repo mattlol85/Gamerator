@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function StartPage(){
+export default function FrontPage(){
 return(
     <div className="StartPage">
     {/* <div className="Logo"> Welcome to GameRater</div> */}

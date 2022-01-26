@@ -6,7 +6,7 @@ import GoogleLogin from 'react-google-login';
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Login from "./components/Login";
-import StartPage from "./components/StartPage";
+import FrontPage from "./components/FrontPage";
 import GameCard from "./components/GameCard";
 import Leaderboard from "./components/Leaderboard"
 import Action from "./components/Action";
@@ -25,7 +25,7 @@ const [loggedIn,SetLoginStatus] = useState(true)
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<StartPage />}></Route>
+        <Route path="/" element={<FrontPage />}></Route>
         <Route path="/home" element={<><Navbar /><Home /></>} />
         <Route path="/action" element={!loggedIn?<Navigate to="/login"/>:<><Navbar /><Action /></>} />
         <Route path="/adventure" element={!loggedIn?<Navigate to="/login"/>:<><Navbar /><Adventure /></>} />
