@@ -19,11 +19,11 @@ export default function Navbar() {
         Indie
       </Link >
 
-      <Link className="shooter" to="Shooter">
+      <Link className="shooter" to="/Shooter">
         Shooter
       </Link >
 
-      <Link className="rpg" to="Rpg">
+      <Link className="rpg" to="/Rpg">
         RPG
       </Link >
 
