@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import GameCard from "./GameCard";
-
-import "../Styles/home.css"; 
+ 
 export default function Shooter() {
     // Hooks
     // CONNECT EXPRESS SERVER AND GET LIST OF COLLEGE
