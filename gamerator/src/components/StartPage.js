@@ -11,8 +11,8 @@ export default function StartPage(){
 return(
     <div className="StartPage">
     {/* <div className="Logo"> Welcome to GameRater</div> */}
-    <h1 className="animate">Welcome to GamerRater!</h1>
-    <h2 className="log"> Log in </h2>
+    <h1 className="animate">Welcome to GamerRater</h1>
+    
     <Link to="/home">
        <button className="HomeLink"> Home </button>
     </Link > 

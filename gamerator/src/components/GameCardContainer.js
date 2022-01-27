@@ -52,11 +52,12 @@ export default function GameCardContainer(props) {
   }
 
   return (
-
+   
     <div className="data">
       {display()}
       {/* <GameCardPopup show={true} /> */}
     </div>
+    
 
   );
 
