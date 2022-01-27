@@ -67,17 +67,23 @@ color: red;
  margin-right: auto;
  transition-duration: .3s;
 }
+.leaderboard{
+font-size: 20px;
+text-decoration: none;
+color: white;
+margin-left: auto;
+}
 
 .home:Hover{
     
 	color: white;
 }
-
-
+.leaderboard:hover{
+	color: red;
+   }
 .action:hover{
  color: red;
 }
-
 .adventure:hover{
  color: red;
 }
