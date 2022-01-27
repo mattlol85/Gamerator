@@ -49,7 +49,6 @@ async function logOutHandler(){
         <Route path="/leaderboard" element={loggedIn==='false'?<Navigate to="/login"/>:<><Navbar /><Leaderboard /></>} />
         <Route path="/login" element={loggedIn==='true'?<Navigate to="/home"/>:<Login SetUser={SetUser} SetLoginStatus={SetLoginStatus}/>} />
       </Routes>
-      <Footer />
     </div>
     </UserEmail.Provider>
   );

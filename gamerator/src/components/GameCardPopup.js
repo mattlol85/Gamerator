@@ -1,27 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import "./styles/BigGameCard.css";
+import "./styles/GameCardPopup.css";
 import Popup from 'reactjs-popup';
 
 
-export default function BigGameCard() {
-    //   const [games, setGames] = useState([]);
-    //   useEffect(() => {
-    //     fetch("http://localhost:8080/action")
-    //     .then(res => res.json())
-    //     .then(
-    //       (result) => {
-    //         setGames(result);
-    //         console.log(result)
-    //       },
-    //       )
-    //   }, [])
-    
+export default function GameCardPopup(props) {
+    // HOOKS
     const contentStyle = {
         all: "revert",
       };
-
+      console.log(props.show);
     return (
-        <Popup trigger={<button> Vote</button>} contentStyle={contentStyle}>
+        
+        <Popup trigger={() => {return true;}} contentStyle={contentStyle}>
         <div class="bigCard">
 
             <div id='col'>

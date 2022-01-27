@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import GameCard from "./GameCard";
+import GameCardContainer from "./GameCardContainer";
  
 export default function RPG() {
     // Hooks
@@ -10,7 +9,7 @@ export default function RPG() {
         <div className="Home">
         <h1> Trending in RPG </h1>
             <h2>Out of the 10 games rate from from 1-5 stars</h2>
-        <GameCard 
+        <GameCardContainer 
         gameType="rpg"/>
 
       

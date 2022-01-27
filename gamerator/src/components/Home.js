@@ -1,6 +1,5 @@
 import React from "react";
-import BigGameCard from "./BigGameCard";
-import GameCard from "./GameCard";
+import GameCardContainer from "./GameCardContainer";
 import './styles/Home.css'
 
 export default function Home() {
