@@ -10,7 +10,6 @@ export default function Home() {
     return (
         <div className="homePage">
             <h1 id="homeTitle"> Home</h1>
-            <GameCard />
         </div>
     )
 }
