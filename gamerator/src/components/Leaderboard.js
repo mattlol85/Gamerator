@@ -12,7 +12,7 @@ export default function Leaderboard() {
            {
             let temp = result[genre]
             arr[genre] = temp.map((element)=><li><em style={{fontSize:'1.2em',fontWeight:'bold'}}>{element.gameName}</em><br></br>
-           Metacritic rating: {element.metaRating!='null'?element.metaRating:'N/A'}<br></br>
+           Metacritic rating: {element.metaRating!=='null'?element.metaRating:'N/A'}<br></br>
            RAWG rating: {element.userRating}<br></br>
            <strong>Our rating: {element.ourScore} out of {element.numVotes} user votes</strong><br></br><br></br><br></br></li>)
            }
