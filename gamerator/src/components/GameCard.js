@@ -1,6 +1,5 @@
 import React, { useState,useEffect } from 'react';
 import "./styles/GameCard.css"; 
-import BigGameCard from './BigGameCard';
 import {UserEmail} from '../App'
 
 export default function GameCard(props) {
@@ -54,4 +53,3 @@ export default function GameCard(props) {
   );
 }
 
-}
