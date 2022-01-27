@@ -14,7 +14,6 @@ export default function GameCardContainer(props) {
     console.log("CLICKED")
     setShowPopup(true);
   }
-
   useEffect(() => {
     fetch(`http://localhost:8080/${props.gameType}/limit=10`)
       .then(res => res.json())
@@ -37,8 +36,8 @@ export default function GameCardContainer(props) {
         genres: games.genres,
         metaRating: games.metaRating,
         userRating: games.userRating,
-        backgroundImg: games.backgroundImg
-
+        backgroundImg: games.backgroundImg,
+        id: games.id
       }
 
       return <div key={games.id} className="gameCardDiv" onClick={() => {
@@ -52,11 +51,12 @@ export default function GameCardContainer(props) {
   }
 
   return (
-
+   
     <div className="data">
       {display()}
       {/* <GameCardPopup show={true} /> */}
     </div>
+    
 
   );
 
