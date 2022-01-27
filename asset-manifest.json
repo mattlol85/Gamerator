@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "//mattlol85.github.io/Gamerator/static/css/main.fff1dd3f.css",
-    "main.js": "//mattlol85.github.io/Gamerator/static/js/main.fd7c0d83.js",
-    "index.html": "//mattlol85.github.io/Gamerator/index.html",
-    "main.fff1dd3f.css.map": "//mattlol85.github.io/Gamerator/static/css/main.fff1dd3f.css.map",
-    "main.fd7c0d83.js.map": "//mattlol85.github.io/Gamerator/static/js/main.fd7c0d83.js.map"
+    "main.css": "./static/css/main.fff1dd3f.css",
+    "main.js": "./static/js/main.fd7c0d83.js",
+    "index.html": "./index.html",
+    "main.fff1dd3f.css.map": "./static/css/main.fff1dd3f.css.map",
+    "main.fd7c0d83.js.map": "./static/js/main.fd7c0d83.js.map"
   },
   "entrypoints": [
     "static/css/main.fff1dd3f.css",
