@@ -4,7 +4,6 @@ import { Routes, Route, Navigate} from "react-router-dom";
 //importing components from Components Folder
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
-import Login from "./components/Login";
 import FrontPage from "./components/FrontPage";
 import GameCard from "./components/GameCard";
 import Leaderboard from "./components/Leaderboard"
@@ -35,19 +34,18 @@ async function logOutHandler(){
     <UserEmail.Provider value={currentUser}>
     <div className="App">
       <Routes>
-        <Route path="/" element={<FrontPage />}></Route>
-        <Route path="/home" element={loggedIn==='false'?<Navigate to="/login"/>:
+        <Route path="/" element={loggedIn==='true'?<Navigate to="/home"/>:<FrontPage SetUser={SetUser} SetLoginStatus={SetLoginStatus}/>}></Route>
+        <Route path="/home" element={loggedIn==='false'?<Navigate to="/"/>:
         <><Navbar />
         <p>Hello {currentUser}!</p>
         <button onClick={logOutHandler}>LOGOUT</button>
         <Home /></>} />
-        <Route path="/action" element={loggedIn==='false'?<Navigate to="/login"/>:<><Navbar /><Action /></>} />
-        <Route path="/adventure" element={loggedIn==='false'?<Navigate to="/login"/>:<><Navbar /><Adventure /></>} />
-        <Route path="/indie" element={loggedIn==='false'?<Navigate to="/login"/>:<><Navbar /><Indie /></>} />
-        <Route path="/shooter" element={loggedIn==='false'?<Navigate to="/login"/>:<><Navbar /><Shooter /></>} />
-        <Route path="/rpg" element={loggedIn==='false'?<Navigate to="/login"/>:<><Navbar /><RPG /></>} />
-        <Route path="/leaderboard" element={loggedIn==='false'?<Navigate to="/login"/>:<><Navbar /><Leaderboard /></>} />
-        <Route path="/login" element={loggedIn==='true'?<Navigate to="/home"/>:<Login SetUser={SetUser} SetLoginStatus={SetLoginStatus}/>} />
+        <Route path="/action" element={loggedIn==='false'?<Navigate to="/"/>:<><Navbar /><Action /></>} />
+        <Route path="/adventure" element={loggedIn==='false'?<Navigate to="/"/>:<><Navbar /><Adventure /></>} />
+        <Route path="/indie" element={loggedIn==='false'?<Navigate to="/"/>:<><Navbar /><Indie /></>} />
+        <Route path="/shooter" element={loggedIn==='false'?<Navigate to="/"/>:<><Navbar /><Shooter /></>} />
+        <Route path="/rpg" element={loggedIn==='false'?<Navigate to="/"/>:<><Navbar /><RPG /></>} />
+        <Route path="/leaderboard" element={loggedIn==='false'?<Navigate to="/"/>:<><Navbar /><Leaderboard /></>} />
       </Routes>
     </div>
     </UserEmail.Provider>

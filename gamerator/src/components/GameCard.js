@@ -5,15 +5,6 @@ import {UserEmail} from '../App'
 export default function GameCard(props) {
   const [games, setGames] = useState([]);
   var user = React.useContext(UserEmail)
-  useEffect(  () => {
-     fetch(`http://localhost:8080/${props.gameType}/limit=10`)
-    .then(res => res.json())
-    .then(
-      (result) => {
-        setGames(result);
-      },
-      )
-  }, [])
 
   async function rateGame(rating,id,email){
     let vote = await (await fetch(`http://localhost:8080/user/${user}/${id}`,{method:'PUT'})).json()
