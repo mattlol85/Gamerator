@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/gamerator/static/css/main.fff1dd3f.css",
+    "main.js": "/gamerator/static/js/main.fd7c0d83.js",
+    "index.html": "/gamerator/index.html",
+    "main.fff1dd3f.css.map": "/gamerator/static/css/main.fff1dd3f.css.map",
+    "main.fd7c0d83.js.map": "/gamerator/static/js/main.fd7c0d83.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fff1dd3f.css",
+    "static/js/main.fd7c0d83.js"
+  ]
+}
