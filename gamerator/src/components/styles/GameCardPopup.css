@@ -1,7 +1,7 @@
 
 .bigCard{
     width: 80%;
-    height: 80%;
+    height: 85%;
     border-radius: 15px;
     outline: 5px solid black;
     margin: 30px;
@@ -44,9 +44,11 @@
 #gameDesc{
  padding-left: 2rem;
  text-align: center;
- width: 400px;
+ width: fit-content;
+ height: auto;
+ height: px;
  display: inline-block;
- font-size: 1.2em;
+ font-size: 1em;
 }
 
 #descDiv{
