@@ -4,7 +4,7 @@ export default function Leaderboard() {
     const [topGames, setTopGames] = useState([]);
 
     useEffect( () => {
-        fetch(`http://localhost:8080/leaderboard`)
+        fetch(`http://${process.env.REACT_APP_HOSTNAME}:8080/leaderboard`)
        .then(res => res.json())
        .then((result) => {
            let arr = {}
