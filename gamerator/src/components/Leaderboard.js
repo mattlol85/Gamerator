@@ -14,7 +14,7 @@ export default function Leaderboard() {
             arr[genre] = temp.map((element)=><li><em style={{fontSize:'1.2em',fontWeight:'bold'}}>{element.gameName}</em><br></br>
            Metacritic rating: {element.metaRating!=='null'?element.metaRating:'N/A'}<br></br>
            RAWG rating: {element.userRating}<br></br>
-           <strong>Our rating: {element.ourScore} out of {element.numVotes} user votes</strong><br></br><br></br><br></br></li>)
+           <strong>Our rating: {element.numVotes} user(s) voted {element.ourScore} stars</strong><br></br><br></br><br></br></li>)
            }
            setTopGames(arr)})
      }, [])
