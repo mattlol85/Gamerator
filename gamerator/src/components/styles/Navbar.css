@@ -1,6 +1,6 @@
 
 body{
-   font-family: Impact, fantasy;
+  
    background-color: #111111;
    text-align: center;
    margin: 0;
@@ -8,12 +8,7 @@ body{
 h1{
    color: #e6784a;
 }
-h2{
-   background-image: linear-gradient(90deg, #FF9E00, #FECCFF);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-}
+
 
 .navbar {
     font-family: Impact, fantasy;

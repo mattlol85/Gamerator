@@ -29,13 +29,13 @@ const [currentUser,SetUser] = useState(localStorage.getItem('userId')?localStora
         <Route path="/" element={loggedIn==='true'?<Navigate to="/home"/>:<FrontPage SetUser={SetUser} SetLoginStatus={SetLoginStatus}/>}></Route>
         <Route path="/home" element={loggedIn==='false'?<Navigate to="/"/>:
         <><Navbar SetUser={SetUser} SetLoginStatus={SetLoginStatus} />
-        <Home /></>} />
-        <Route path="/action" element={loggedIn ==='false'?<Navigate to="/"/>:<><Navbar SetUser={SetUser} SetLoginStatus={SetLoginStatus} /><Action /></>} />
-        <Route path="/adventure" element={loggedIn ==='false'?<Navigate to="/"/>:<><Navbar SetUser={SetUser} SetLoginStatus={SetLoginStatus} /><Adventure /></>} />
-        <Route path="/indie" element={loggedIn ==='false'?<Navigate to="/"/>:<><Navbar SetUser={SetUser} SetLoginStatus={SetLoginStatus} /><Indie /></>} />
-        <Route path="/shooter" element={loggedIn ==='false'?<Navigate to="/"/>:<><Navbar SetUser={SetUser} SetLoginStatus={SetLoginStatus} /><Shooter /></>} />
-        <Route path="/rpg" element={loggedIn ==='false'?<Navigate to="/"/>:<><Navbar SetUser={SetUser} SetLoginStatus={SetLoginStatus} /><RPG /></>} />
-        <Route path="/leaderboard" element={loggedIn ==='false'?<Navigate to="/"/>:<><Navbar SetUser={SetUser} SetLoginStatus={SetLoginStatus} /><Leaderboard /></>} />
+        <Home /><Footer /></>} />
+        <Route path="/action" element={loggedIn ==='false'?<Navigate to="/"/>:<><Navbar SetUser={SetUser} SetLoginStatus={SetLoginStatus} /><Action /><Footer /></>} />
+        <Route path="/adventure" element={loggedIn ==='false'?<Navigate to="/"/>:<><Navbar SetUser={SetUser} SetLoginStatus={SetLoginStatus} /><Adventure /><Footer /></>} />
+        <Route path="/indie" element={loggedIn ==='false'?<Navigate to="/"/>:<><Navbar SetUser={SetUser} SetLoginStatus={SetLoginStatus} /><Indie /><Footer /></>} />
+        <Route path="/shooter" element={loggedIn ==='false'?<Navigate to="/"/>:<><Navbar SetUser={SetUser} SetLoginStatus={SetLoginStatus} /><Shooter /><Footer /></>} />
+        <Route path="/rpg" element={loggedIn ==='false'?<Navigate to="/"/>:<><Navbar SetUser={SetUser} SetLoginStatus={SetLoginStatus} /><RPG /><Footer /></>} />
+        <Route path="/leaderboard" element={loggedIn ==='false'?<Navigate to="/"/>:<><Navbar SetUser={SetUser} SetLoginStatus={SetLoginStatus} /><Leaderboard /><Footer /></>} />
       </Routes>
     </div>
     </UserEmail.Provider>

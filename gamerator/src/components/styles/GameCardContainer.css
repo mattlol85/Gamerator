@@ -8,7 +8,7 @@
 .actionHeader{
 	margin: auto;
 	color: white;
-   background: linear-gradient(to right, #F9DD55, #c14263);
+   background-color: teal;
    padding: 10px;
 }
 .advHeader{
@@ -44,7 +44,7 @@
 
 .gameCardDiv{
 	font-family: American Typewriter, serif;
-	box-shadow: 10px 10px 6px white;
+	box-shadow: 10px 10px 6px grey;
 	margin: 25px;
 	overflow: hidden;
 	width: 20em;
