@@ -1,7 +1,7 @@
 
 .bigCard{
     width: 80%;
-    height: 80%;
+    height: 85%;
     border-radius: 15px;
     outline: 5px solid black;
     margin: 30px;
@@ -48,9 +48,11 @@
 #gameDesc{
  padding-left: 2rem;
  text-align: center;
- width: 400px;
+ width: fit-content;
+ height: auto;
+ height: px;
  display: inline-block;
- font-size: 1.2em;
+ font-size: 1em;
 }
 
 #descDiv{
@@ -91,4 +93,20 @@
     margin:0.2em;
     border-radius: 15px;
     object-fit: cover;
+}
+.popupScreenshot{
+    position: fixed;
+    right:25%;
+    bottom:25%;
+    border-radius: 50px;
+    outline: 5px solid rgba(179, 109, 44, 0.466);
+
+}
+.popupBigImg{
+    position: fixed;
+    right:20%;
+    bottom:20%;
+    border-radius: 50px;
+    outline: 5px solid rgba(0, 0, 0, 0.466);
+
 }

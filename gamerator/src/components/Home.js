@@ -9,6 +9,7 @@ export default function Home() {
         <div className="homePage">
             <div id="homeContent" >
                 <div className="about">
+
                     <h2>🎮Welcome</h2>
                     <h3>Gamerator is a place where gamers can come together and see
                         once and for all if the top games really stand the test of the <i>current</i> times. Gamerator strides
@@ -25,6 +26,7 @@ export default function Home() {
                 <br />
                 <br />
                 <div className="about">
+
                     <h2>💙 Made With Love</h2>
                     <p id="smallText">By four handsome programmers...</p>
                     <h3>This application was made using React.JS, Posgres, Node.JS, and Express. The backend of this applicaton is deployed on Heroku

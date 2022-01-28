@@ -29,7 +29,7 @@ export default function GameCardPopup(props) {
         <div class="bigCard">
 
             <div id='col'>
-                <img id='bigCardImg' src={props.gameData.backgroundImg} />
+                <Popup trigger={<img id='bigCardImg' src={props.gameData.backgroundImg} />} closeOnDocumentClick><img className="popupBigImg" src={props.gameData.backgroundImg} height="60%" width="60%"></img></Popup>
                 <br></br><br></br>
                 <p><strong>{props.gameData.genres.join('/ ')}</strong></p>
                 <p>Released: {date}</p>
@@ -60,7 +60,7 @@ export default function GameCardPopup(props) {
             </div>
             <div id='col'>
                 <h2>Screenshots</h2>
-                {props.gameData.images.slice(1).map((element)=><><img className="screenshots" src={element} height="17%" width="70%"></img></>)}
+                {props.gameData.images.slice(1).map((element)=><Popup trigger={<img className="screenshots" src={element} height="17%" width="70%"></img>} closeOnDocumentClick><img className="popupScreenshot" src={element} height="50%" width="50%"></img></Popup>)}
             </div>
 
         </div>
