@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import "./styles/GameCardContainer.css";
+import "./styles/GameCard.css";
 import { UserEmail } from '../App'
 import star1 from '../img/Star1.png'
 import star2 from '../img/Star2.png'

@@ -9,7 +9,7 @@ export default function Adventure() {
     return (
         <div className="Home">
             <h1> Trending in Adventure </h1>
-            <h2>Out of the 10 games rate from from 1-5 stars</h2>
+           
             {/* <GameCard gameType="adventure" /> */}
             <GameCardContainer gameType="adventure"/>
         </div>

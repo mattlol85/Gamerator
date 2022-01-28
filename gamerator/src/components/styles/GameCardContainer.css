@@ -1,3 +1,6 @@
+.barHeader{
+   background-color: orange;
+}
 
 .data{
 	
@@ -23,6 +26,7 @@
 	border-radius: 12px;
 	transition-duration: .3s;
 	filter: brightness(.4);
+
 
 }
 

@@ -1,8 +1,13 @@
+
+
 .leaderboardcolumns{
 	display: flex;
 	justify-content: space-evenly;
 }
 
+
 ol{
-	list-style-position: inside;
+	
+	color:#e6784a;
+	
 }

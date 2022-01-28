@@ -8,7 +8,7 @@ export default function RPG() {
     return (
         <div className="Home">
         <h1> Trending in RPG </h1>
-            <h2>Out of the 10 games rate from from 1-5 stars</h2>
+            
         <GameCardContainer 
         gameType="rpg"/>
 

@@ -12,7 +12,7 @@ export default function Action() {
     return (
         <div className="Home">
         <h1> Trending in Action </h1>
-        <h2>Out of the 10 games rate from from 1-5 stars</h2>
+
 
       <GameCardContainer gameType="action"/>
     </div>
