@@ -60,7 +60,7 @@ export default function GameCardPopup(props) {
             </div>
             <div id='col'>
                 <h2>Screenshots</h2>
-                {props.gameData.images.slice(1).map((element)=><><img className="screenshots" src={element} height="17%"></img></>)}
+                {props.gameData.images.slice(1).map((element)=><><img className="screenshots" src={element} height="17%" width="70%"></img></>)}
             </div>
 
         </div>

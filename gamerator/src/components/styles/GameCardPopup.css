@@ -1,10 +1,11 @@
+
 .bigCard{
     width: 80%;
     height: 80%;
     border-radius: 15px;
     outline: 5px solid black;
     margin: 30px;
-    background: linear-gradient(-45deg, #fd3030, #db2c2cc5, #ad3535cc, #c85454);
+    background: linear-gradient(-45deg, #000000, #000000c5, #351f11e8, #3d210a);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     display: flex;
@@ -13,14 +14,13 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
 }
 
 
 #bigCardImg{
     margin-top: 2rem;
-    height:25rem;
-    width:35rem;
+    height:40%;
+    width:90%;
     outline: 5px solid black;
     border-radius: 15px;
     object-fit: cover;
@@ -89,4 +89,5 @@
 .screenshots{
     margin:0.2em;
     border-radius: 15px;
+    object-fit: cover;
 }
