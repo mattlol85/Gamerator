@@ -1,29 +1,21 @@
-import React from "react";
 import GoogleLogin from 'react-google-login';
 import logo from '../img/logo.png'
 import './styles/FrontPage.css';
+import React,{ useState, setState} from 'react';
 export default function StartPage(props){
 
-async function handleLogin(data){
-  await fetch(`http://${process.env.REACT_APP_HOSTNAME}/user`,{method:'POST',body: JSON.stringify({
-    token: data.tokenId,
-  }),
-  headers: {
-    'Content-Type': 'application/json',
-  }})
+  const [input,setInput] = useState("")
+
+async function handleLogin(user){
+  await fetch(`http://${process.env.REACT_APP_HOSTNAME}/user/${user}`,{method:'POST'})
   localStorage.setItem('loginState','true')
-  localStorage.setItem('userId',data.profileObj.email)
+  localStorage.setItem('userId',user)
   props.SetLoginStatus('true')
-  props.SetUser(data.profileObj.email)
+  props.SetUser(user)
+  //else{alert("")}
+  setInput("")
 }
-function handleFailure(result){
-  
-  alert(result.error)
-  localStorage.setItem('loginState','false')
-  localStorage.setItem('userId','null')
-  props.SetLoginStatus('false')
-  props.SetUser('null')
-}
+
 
 return(
     <div className="startDiv">
@@ -32,12 +24,15 @@ return(
     <img className="animate" src={logo} />
     <br />
     <br />
-     <GoogleLogin
+     {/* <GoogleLogin
     clientId={process.env.REACT_APP_GOOGLEID}
     buttonText="Log in using Google"
     onSuccess={handleLogin}
     onFailure={handleFailure}
-  />
+  /> */}
+
+    <input type="text" onChange={(event)=>setInput(event.target.value)}value={input}></input><br></br><br></br>
+    <button className='logoutBtn' onClick={()=>handleLogin(input)}>LOGIN</button>
     </div>
 
 )

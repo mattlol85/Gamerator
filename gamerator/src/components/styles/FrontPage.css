@@ -41,5 +41,18 @@
 		
 	}
 }
-
+.logoutBtn{
+	font-family: Impact, fantasy;
+	font-size: 22px;
+	text-decoration: none;
+	border-style: none;
+	padding:5px 20px;
+	border-radius: 10px;
+	transition-duration: .3s;
+ }
+ .logoutBtn:Hover{
+	font-family: Impact, fantasy;
+	 color: rgb(0, 0, 0);
+	 transform: scale(1.2);
+ }
 
