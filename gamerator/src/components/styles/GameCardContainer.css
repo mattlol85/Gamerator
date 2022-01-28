@@ -1,5 +1,34 @@
 .barHeader{
-   background-color: orange;
+	margin: auto;
+	color: white;
+   background: linear-gradient(to right, blue, pink);
+   padding: 10px;
+}
+
+.actionHeader{
+	margin: auto;
+	color: white;
+   background: linear-gradient(to right, #F9DD55, #c14263);
+   padding: 10px;
+}
+.advHeader{
+	margin: auto;
+	color: white;
+   background: linear-gradient(to right, #227FCE, #71CE22);
+   padding: 10px;
+
+}
+.shooterHeader{
+	margin: auto;
+	color: white;
+   background: linear-gradient(to right, #FF7171, #FFBA71);
+   padding: 10px;
+}
+.rpgHeader{
+	margin: auto;
+	color: white;
+   background: linear-gradient(to right, #FCFE3C, #D765FA);
+   padding: 10px;
 }
 
 .data{

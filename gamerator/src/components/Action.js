@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import GameCard from "./GameCard";
 import GameCardContainer from "./GameCardContainer";
-
+import "./styles/GameCardContainer.css";
 
 
 export default function Action() {
@@ -11,7 +11,7 @@ export default function Action() {
     
     return (
         <div className="Home">
-        <h1> Trending in Action </h1>
+        <h1 className="actionHeader"> Trending in Action </h1>
 
 
       <GameCardContainer gameType="action"/>

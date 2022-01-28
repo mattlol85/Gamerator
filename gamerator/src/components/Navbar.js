@@ -7,7 +7,7 @@ export default function Navbar() {
     <nav className="navbar">
       
       <Link className="home" to="/home">
-        GameRater
+        GameRator
       </Link >
 
       <Link className="leaderboard" to="/Leaderboard">
