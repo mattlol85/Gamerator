@@ -24,7 +24,7 @@ h2{
     border-width: 2px;
     border-color: #e6784a;
     color: white;
-    padding: 40px;
+    padding: 10px 40px;
     
 }
 
@@ -84,7 +84,7 @@ h2{
    transition-duration: .3s;
 }
 .leaderboard{
-    font-size: 20px;
+    font-size: 24px;
     text-decoration: none;
     color: white;
     margin-right: auto;
@@ -120,4 +120,18 @@ h2{
 .rpg:hover{
    color: teal;
    transform: scale(1.2);
+}
+.logoutBtn{
+   font-family: Impact, fantasy;
+   font-size: 22px;
+   text-decoration: none;
+   border-style: none;
+   padding:5px 20px;
+   border-radius: 10px;
+   transition-duration: .3s;
+}
+.logoutBtn:Hover{
+   font-family: Impact, fantasy;
+	color: rgb(0, 0, 0);
+    transform: scale(1.2);
 }
