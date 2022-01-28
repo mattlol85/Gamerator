@@ -13,8 +13,6 @@ export default function GameCard(props) {
         <br></br>
         <div className="cardPlacement">
         </div>
-        
-        
     </div>
   );
 }

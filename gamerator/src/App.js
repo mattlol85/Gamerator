@@ -37,7 +37,7 @@ async function logOutHandler(){
         <Route path="/" element={loggedIn==='true'?<Navigate to="/home"/>:<FrontPage SetUser={SetUser} SetLoginStatus={SetLoginStatus}/>}></Route>
         <Route path="/home" element={loggedIn==='false'?<Navigate to="/"/>:
         <><Navbar />
-        <p>Hello {currentUser}!</p>
+        <h1>Welcome {currentUser}!</h1>
         <button onClick={logOutHandler}>LOGOUT</button>
         <Home /></>} />
         <Route path="/action" element={loggedIn==='false'?<Navigate to="/"/>:<><Navbar /><Action /></>} />

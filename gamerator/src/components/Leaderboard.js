@@ -21,7 +21,7 @@ export default function Leaderboard() {
 
     return (
         <div className="Leaderboard">
-        <h1>Top Rated Games</h1>
+        <h1 className="leaderHeader">Top Rated Games</h1>
         <div className="leaderboardcolumns">
         <ol>
         <h2>Action</h2>

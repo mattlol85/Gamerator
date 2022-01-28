@@ -1,8 +1,19 @@
+.leaderHeader{
+	margin: auto;
+	color: white;
+   background: linear-gradient(to right, #57FECE, #FBCB0B);
+   padding: 10px;
+}
+
 .leaderboardcolumns{
+	
 	display: flex;
 	justify-content: space-evenly;
 }
 
+
 ol{
-	list-style-position: inside;
+	
+	color:#e6784a;
+	
 }

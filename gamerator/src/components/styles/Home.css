@@ -2,3 +2,29 @@
     text-align: center;
     
 }
+#homeContent{
+    margin: 25px;
+    width: 500px;
+
+}
+.homePage{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+#smallText{
+    font-size: 8px;
+    color: #e6784a;
+}
+#smallestText{
+    font-size: 3px;
+    color: #e6784a;
+}
+
+.about{
+    margin: 10px;
+    color: #e6784a;
+    border: solid;
+    border-radius: 12px;
+}
