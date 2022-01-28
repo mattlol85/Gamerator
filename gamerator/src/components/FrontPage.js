@@ -32,6 +32,7 @@ return(
     buttonText="Log in using Google"
     onSuccess={handleLogin}
     onFailure={handleFailure}
+    cookiePolicy={'single_host_origin'}
   />
     </div>
 
