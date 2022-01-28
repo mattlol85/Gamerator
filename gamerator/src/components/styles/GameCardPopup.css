@@ -63,9 +63,10 @@
 
 }
 
-#col{
+.col{
     width: 33.33%;
     padding: 10px;
+    max-height: 100%;
   }
 
 #links{
@@ -81,7 +82,7 @@
     border: none;
     background: none;
     transition-duration: .25s;
-    margin:1em;
+    margin:0em 1em;
 
 }
 
