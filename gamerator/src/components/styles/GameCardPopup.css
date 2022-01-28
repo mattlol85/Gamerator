@@ -88,3 +88,19 @@
     border-radius: 15px;
     object-fit: cover;
 }
+.popupScreenshot{
+    position: fixed;
+    right:25%;
+    bottom:25%;
+    border-radius: 50px;
+    outline: 5px solid rgba(179, 109, 44, 0.466);
+
+}
+.popupBigImg{
+    position: fixed;
+    right:20%;
+    bottom:20%;
+    border-radius: 50px;
+    outline: 5px solid rgba(0, 0, 0, 0.466);
+
+}
