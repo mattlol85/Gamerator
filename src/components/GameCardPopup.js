@@ -19,9 +19,9 @@ export default function GameCardPopup(props) {
     date = date.join("/")
 
     async function rateGame(rating, id, email) {
-        let vote = await (await fetch(`http://${process.env.REACT_APP_HOSTNAME}/user/${user}/${props.gameData.id}`, { method: 'PUT' })).json()
+        let vote = await (await fetch(`https://${process.env.REACT_APP_HOSTNAME}/user/${user}/${props.gameData.id}`, { method: 'PUT' })).json()
         console.log(vote)
-        if (vote) { await fetch(`http://${process.env.REACT_APP_HOSTNAME}/${props.gameData.id}/${rating}`, { method: 'PUT' }) }
+        if (vote) { await fetch(`https://${process.env.REACT_APP_HOSTNAME}/${props.gameData.id}/${rating}`, { method: 'PUT' }) }
         else { alert("You have already voted on this game!") }
       }
     
