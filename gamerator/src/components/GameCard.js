@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import "./styles/GameCard.css";
 import { UserEmail } from '../App'
+import star1 from '../img/Star1.png'
+import star2 from '../img/Star2.png'
+import star3 from '../img/Star3.png'
+import star4 from '../img/Star4.png'
+import star5 from '../img/Star5.png'
 
 export default function GameCard(props) {
   var user = React.useContext(UserEmail)
@@ -21,11 +26,11 @@ export default function GameCard(props) {
         <h3 className="rating"> {props.gameData.esrbRating} / {props.gameData.genres}</h3>
         <h3 className="genre"> </h3> {/*moved genre to make space in the card for the buttons*/}
         <h4 className="rating"> Metacritic rating: {props.gameData.metaRating != 'null' ? props.gameData.metaRating : 'N/A'} / RAWG rating: {props.gameData.userRating}</h4>
-        <button onClick={() => rateGame(1, props.gameData.id, user)}>1</button>
-        <button onClick={() => rateGame(2, props.gameData.id, user)}>2</button>
-        <button onClick={() => rateGame(3, props.gameData.id, user)}>3</button>
-        <button onClick={() => rateGame(4, props.gameData.id, user)}>4</button>
-        <button onClick={() => rateGame(5, props.gameData.id, user)}>5</button>
+        <button className='btnClass' onClick={() => rateGame(1, props.gameData.id, user)}><img src={star1} /></button>
+        <button className='btnClass' onClick={() => rateGame(2, props.gameData.id, user)}><img src={star2} /></button>
+        <button className='btnClass' onClick={() => rateGame(3, props.gameData.id, user)}><img src={star3} /></button>
+        <button className='btnClass' onClick={() => rateGame(4, props.gameData.id, user)}><img src={star4} /></button>
+        <button className='btnClass' onClick={() => rateGame(5, props.gameData.id, user)}><img src={star5} /></button>
     </div>
   );
 }
