@@ -5,9 +5,6 @@ import GoogleLogin from 'react-google-login';
 import './styles/StartPage.css';
 export default function StartPage(props){
 
-    const responseGoogle = (response) => {
-  console.log(response);
-}
 async function handleLogin(data){
   await fetch(`http://localhost:8080/user/${data.profileObj.email}`,{method:'POST'})
   localStorage.setItem('loginState','true')
