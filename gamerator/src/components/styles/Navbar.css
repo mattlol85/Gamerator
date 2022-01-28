@@ -1,14 +1,18 @@
 
 body{
-    background-color: #111111;
-    text-align: center;
-    margin: 0;
+   font-family: Impact, fantasy;
+   background-color: #111111;
+   text-align: center;
+   margin: 0;
 }
 h1{
    color: #e6784a;
 }
 h2{
-   color: #e6784a;
+   background-image: linear-gradient(90deg, #FF9E00, #FECCFF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .navbar {
@@ -88,7 +92,7 @@ h2{
 }
 
 .leaderboard:hover{
-    color: #e6784a;
+    color: red;
     transform: scale(1.2);
 }
 
@@ -98,22 +102,22 @@ h2{
 }
 
 .action:hover{
-   color: #e6784a;
+   color: blue;
    transform: scale(1.2);
 }
 .adventure:hover{
-   color: #e6784a;
+   color: green;
    transform: scale(1.2);
 }
 .indie:hover{
-   color: #e6784a;
+   color: yellow;
    transform: scale(1.2);
 }
 .shooter:hover{
-    color: #e6784a;
+    color: purple;
     transform: scale(1.2);
 }
 .rpg:hover{
-   color: #e6784a;
+   color: teal;
    transform: scale(1.2);
 }

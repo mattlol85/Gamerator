@@ -19,6 +19,7 @@ function handleFailure(result){
   props.SetLoginStatus('false')
   props.SetUser('null')
 }
+
 return(
     <div className="startDiv">
     {/* <div className="Logo"> Welcome to GameRater</div> */}

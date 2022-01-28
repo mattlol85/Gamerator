@@ -1,7 +1,7 @@
 
 .bigCard{
     width: 80%;
-    height: 80%;
+    height: 85%;
     border-radius: 15px;
     outline: 5px solid black;
     margin: 30px;
@@ -14,11 +14,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color:white;
+    color: white;
 }
-#imageDiv{
-    
-}
+
+
 #bigCardImg{
     margin-top: 2rem;
     height:40%;
@@ -32,20 +31,26 @@
 }
 @keyframes gradient {
     0% {
+
+        opacity: 0;
         background-position: 0% 50%;
     }
-    50% {
+    1% {
+        opacity: 1;
         background-position: 100% 50%;
     }
     100% {
+        
+        opacity: 1;
         background-position: 0% 50%;
     }
 }
 #gameDesc{
  padding-left: 2rem;
  text-align: center;
- width: 400px;
- 
+ width: fit-content;
+ height: auto;
+ height: px;
  display: inline-block;
  font-size: 1em;
 }
