@@ -1,13 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import GoogleLogin from 'react-google-login';
-
-import './styles/StartPage.css';
+import logo from '../img/logo.png'
+import './styles/FrontPage.css';
 export default function StartPage(props){
 
-    const responseGoogle = (response) => {
-  console.log(response);
-}
 async function handleLogin(data){
   await fetch(`http://localhost:8080/user/${data.profileObj.email}`,{method:'POST'})
   localStorage.setItem('loginState','true')
@@ -24,16 +20,17 @@ function handleFailure(result){
   props.SetUser('null')
 }
 return(
-    <div className="StartPage">
+    <div className="startDiv">
     {/* <div className="Logo"> Welcome to GameRater</div> */}
-    <h1 className="animate">Welcome to GamerRater!</h1>
-    <h2 className="log"> Log in </h2>
+    <img className="animate" src={logo} />
+    <br />
+    <br />
      <GoogleLogin
     clientId={process.env.REACT_APP_GOOGLEID}
     buttonText="Login"
     buttonText="Log in using Google"
-      onSuccess={handleLogin}
-      onFailure={handleFailure}
+    onSuccess={handleLogin}
+    onFailure={handleFailure}
   />
     </div>
 

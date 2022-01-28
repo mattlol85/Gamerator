@@ -1,23 +1,15 @@
-.StartPage{
- position: relative;
-
- 
-}
-.HomeLink{
-
-	font-size: 20px;
-	margin: 20px;
-	padding: 15px;
-	border-radius: 12px;
-	border-width: 1px;
-	cursor: pointer;
-	transition-duration: .3s;
+.startDiv{
+	position: absolute;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 400px;
+	height: 200px;
+	padding: 30px;
 }
 
-.HomeLink:hover{
-
-	color: white;
-}
 .googleLogin{
 	margin: 20px;
 
@@ -49,4 +41,5 @@
 		
 	}
 }
+
 
