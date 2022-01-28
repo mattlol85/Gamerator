@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import "./styles/GameCard.css";
+import "./styles/GameCardContainer.css";
 import { UserEmail } from '../App'
 
 export default function GameCard(props) {

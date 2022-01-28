@@ -1,6 +1,14 @@
-
+button{
+	border-radius: 6px;
+	border-width: 1px;
+	margin: 1px;
+	cursor: pointer;
+}
+button:hover{
+	background-color: #e6784a;
+}
 .data{
-	background-color: #DEDEDE;
+	
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -14,12 +22,12 @@
 
 .gameCardDiv{
 	font-family: American Typewriter, serif;
-	box-shadow: 10px 10px 5px grey;
+	box-shadow: 10px 10px 6px #e6784a;
 	margin: 25px;
 	overflow: hidden;
 	width: 20em;
 	background-color: black;
-	color: #D74646;
+	color: white;
 	border-radius: 12px;
 	transition-duration: .3s;
 	filter: brightness(.4);
@@ -29,7 +37,7 @@
 .gameCardDiv:hover{
 	cursor: pointer;
 	transform: scale(1.1);
-	color: white;
+	color: #e6784a;
 	filter: brightness(1);
 	
 }
