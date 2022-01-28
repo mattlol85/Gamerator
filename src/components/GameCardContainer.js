@@ -11,7 +11,7 @@ export default function GameCardContainer(props) {
 
   
   useEffect(() => {
-    fetch(`http://${process.env.REACT_APP_HOSTNAME}/${props.gameType}/limit=24`)
+    fetch(`https://${process.env.REACT_APP_HOSTNAME}/${props.gameType}/limit=24`)
       .then(res => res.json())
       .then(
         (result) => {
