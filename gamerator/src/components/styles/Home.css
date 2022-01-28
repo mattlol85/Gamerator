@@ -2,3 +2,18 @@
     text-align: center;
     
 }
+#homeContent{
+    width: 500px;
+}
+.homePage{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+#smallText{
+    font-size: 8px;
+}
+#smallestText{
+    font-size: 3px;
+}
