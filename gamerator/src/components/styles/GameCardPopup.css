@@ -18,9 +18,9 @@
     
 }
 #bigCardImg{
-    margin-left: 2rem;
     margin-top: 2rem;
-    height:20rem;
+    height:25rem;
+    width:35rem;
     outline: 5px solid black;
     border-radius: 15px;
     object-fit: cover;
