@@ -29,14 +29,13 @@ export default function Home() {
 
                     <h2>💙 Made With Love</h2>
                     <p id="smallText">By four handsome programmers...</p>
-                    <h3>This application was made using React.JS, Posgres, Node.JS, and Express. The backend of this applicaton is deployed on Heroku
-                        and the front on Netlify.
+                    <h3>This application was made using React.JS, PostgreSQL, Node.JS, and Express. The backend and frontend of this applicaton is deployed on Heroku.
                     </h3>
                 </div>
                 <br />
                 <div className="about">
                     <h2>💼  Hire Us</h2>
-                    <h3 id="smallestText">please</h3>
+                    <h3 id="smallText">please</h3>
                 </div>
             </div>
         </div>
