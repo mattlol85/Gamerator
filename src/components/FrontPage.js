@@ -7,7 +7,7 @@ export default function StartPage(props){
   const [input,setInput] = useState("")
 
 async function handleLogin(user){
-  await fetch(`http://${process.env.REACT_APP_HOSTNAME}/user/${user}`,{method:'POST'})
+  await fetch(`https://${process.env.REACT_APP_HOSTNAME}/user/${user}`,{method:'POST'})
   localStorage.setItem('loginState','true')
   localStorage.setItem('userId',user)
   props.SetLoginStatus('true')
