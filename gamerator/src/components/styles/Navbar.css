@@ -71,7 +71,12 @@ color: red;
 font-size: 20px;
 text-decoration: none;
 color: white;
-margin-left: auto;
+margin-right: auto;
+transition-duration: .3s;
+}
+
+.leaderboard:hover{
+    color: red;
 }
 
 .home:Hover{
