@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import "./styles/Navbar.css";
 import { UserEmail } from '../App'
+import logo from '../img/logoSmall.png'
 
 export default function Navbar(props) {
   var user = React.useContext(UserEmail)
@@ -18,7 +19,7 @@ export default function Navbar(props) {
     <nav className="navbar">
       
       <Link className="home" to="/home">
-        GameRator
+        <img src={logo} />
       </Link >
 
       <Link className="leaderboard" to="/Leaderboard">
