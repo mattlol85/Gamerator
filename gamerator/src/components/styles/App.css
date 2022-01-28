@@ -1,0 +1,11 @@
+#welcomeUser{
+    text-align: center;
+    color: white;
+    float: left;
+}
+
+#logoutBtn{
+    border-radius: 3rem;
+    float: right;
+    margin-right: 2rem;
+}
