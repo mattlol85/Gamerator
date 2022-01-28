@@ -2,25 +2,21 @@ import React, { useState, useEffect } from 'react';
 import "./styles/GameCardContainer.css";
 import GameCard from './GameCard';
 import GameCardPopup from './GameCardPopup';
+import Popup from 'reactjs-popup';
 
 export default function GameCardContainer(props) {
 
 
   const [games, setGames] = useState([]);
 
-  const [showPopup, setShowPopup] = useState(false);
-
-  const openPopup = function () {
-    console.log("CLICKED")
-    setShowPopup(true);
-  }
+  
   useEffect(() => {
     fetch(`http://localhost:8080/${props.gameType}/limit=10`)
       .then(res => res.json())
       .then(
         (result) => {
           setGames(result);
-          console.log(result)
+
 
         },
       )
@@ -30,24 +26,8 @@ export default function GameCardContainer(props) {
   const display = () => {
     return games.map((games) => {
 
-      const gameCardConfig = {
-        gameName: games.gameName,
-        esrbRating: games.esrbRating,
-        genres: games.genres,
-        metaRating: games.metaRating,
-        userRating: games.userRating,
-        backgroundImg: games.backgroundImg,
-        id: games.id
-      }
 
-      return <div key={games.id} className="gameCardDiv" onClick={() => {
-        setShowPopup(true);
-
-      }}>
-        <GameCard gameData={gameCardConfig} />
-        {/* <BigGameCard show={showPopup}/> */}
-      </div>
-    })
+      return <Popup trigger={<div><GameCard gameData={games}/></div>} closeOnDocumentClick><GameCardPopup gameData={games}/></Popup>})
   }
 
   return (

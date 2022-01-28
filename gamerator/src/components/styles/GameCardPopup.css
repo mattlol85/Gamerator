@@ -1,6 +1,6 @@
 .bigCard{
-    width: 75%;
-    height: 400px;
+    width: 80%;
+    height: 80%;
     border-radius: 15px;
     outline: 5px solid black;
     margin: 30px;
@@ -20,8 +20,7 @@
 #bigCardImg{
     margin-left: 2rem;
     margin-top: 2rem;
-    width:20rem;
-    height:13rem;
+    height:20rem;
     outline: 5px solid black;
     border-radius: 15px;
     object-fit: cover;
@@ -42,9 +41,10 @@
 }
 #gameDesc{
  padding-left: 2rem;
- text-align: left;
- width: 300px;
+ text-align: center;
+ width: 400px;
  display: inline-block;
+ font-size: 1.2em;
 }
 
 #descDiv{
@@ -69,4 +69,19 @@
     position: absolute;
     bottom: 0;
 }
+.btnClass{
+    border: none;
+    background: none;
+    transition-duration: .25s;
+    margin:1em;
 
+}
+
+.btnClass:hover{
+    transform: scale(1.5);
+}
+
+.screenshots{
+    margin:0.2em;
+    border-radius: 15px;
+}
