@@ -1,5 +1,4 @@
 #footer{
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -17,4 +16,13 @@
 
 #footerItems{
     text-align: center;
+    text-decoration: none;
 }
+
+#item:visited{
+    text-decoration: none;
+}
+#item:visited { text-decoration: none; color: black;}
+#item:hover { text-decoration: none; color:black; }
+#item:focus { text-decoration: none; color:black; }
+#item:hover, a:active { text-decoration: none; color:black }

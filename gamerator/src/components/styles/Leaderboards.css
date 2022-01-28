@@ -6,14 +6,15 @@
 }
 
 .leaderboardcolumns{
-	
 	display: flex;
 	justify-content: space-evenly;
 }
 
 
 ol{
-	
-	color:#e6784a;
+   background-image: linear-gradient(90deg, #D000FF, #FFB073);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 	
 }
