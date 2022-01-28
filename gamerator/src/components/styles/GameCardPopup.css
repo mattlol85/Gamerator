@@ -86,4 +86,5 @@
 .screenshots{
     margin:0.2em;
     border-radius: 15px;
+    object-fit: cover;
 }
