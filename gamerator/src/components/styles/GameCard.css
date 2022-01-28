@@ -1,0 +1,10 @@
+.btnClass{
+    border: none;
+    background: none;
+    transition-duration: .25s;
+
+}
+
+.btnClass:hover{
+    transform: scale(1.5);
+}
