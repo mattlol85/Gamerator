@@ -44,8 +44,7 @@ export default function GameCardPopup(props) {
                 
             </div>
             <div className='col'>
-            <h1>{props.gameData.gameName}</h1>
-                <h2>Description</h2>
+            <h1 id='gameName'>{props.gameData.gameName}</h1>
                 <p id="gameDesc">
                     {props.gameData.description}
                     <br></br>

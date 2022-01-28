@@ -11,7 +11,7 @@ export default function Action() {
     
     return (
         <div className="Home">
-        <h1 className="actionHeader"> Trending in Action </h1>
+        <h1 className="actionHeader">  Action </h1>
 
 
       <GameCardContainer gameType="action"/>

@@ -5,7 +5,7 @@
     border-radius: 15px;
     outline: 5px solid black;
     margin: 30px;
-    background: linear-gradient(-45deg, #000000, #000000c5, #351f11e8, #3d210a);
+    background: linear-gradient(-45deg, #c57314, #d49747, #d49e47, #c77619);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     display: flex;
@@ -28,6 +28,7 @@
 }
 #gameTitle{
     padding-right: 5rem;
+
 }
 @keyframes gradient {
     0% {
@@ -53,10 +54,12 @@
  height: px;
  display: inline-block;
  font-size: 1em;
+ color: gray;
 }
 
 #descDiv{
     display: inline-block;
+    
 }
 
 #linkDiv{
@@ -110,4 +113,8 @@
     border-radius: 50px;
     outline: 5px solid rgba(0, 0, 0, 0.466);
 
+}
+#gameName{
+    color: black;
+    font-weight: bold;
 }
