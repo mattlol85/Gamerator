@@ -22,6 +22,7 @@ function handleFailure(result){
 return(
     <div className="startDiv">
     {/* <div className="Logo"> Welcome to GameRater</div> */}
+
     <img className="animate" src={logo} />
     <br />
     <br />

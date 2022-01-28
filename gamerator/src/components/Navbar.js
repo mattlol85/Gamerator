@@ -5,14 +5,13 @@ import "./styles/Navbar.css";
 export default function Navbar() {
   return (
     <nav className="navbar">
-      <div className="Logo">GameRater</div>
-
-      <Link className="leaderboard" to="/Leaderboard">
-        Leaderboard
-      </Link >
       
       <Link className="home" to="/home">
         GameRater
+      </Link >
+
+      <Link className="leaderboard" to="/Leaderboard">
+        Leaderboard
       </Link >
      
       <Link className="action" to="/Action">

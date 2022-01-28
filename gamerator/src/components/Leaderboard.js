@@ -1,5 +1,5 @@
 import React, { useState,useEffect } from 'react';
- 
+import './styles/Leaderboards.css';
 export default function Leaderboard() {
     const [topGames, setTopGames] = useState([]);
 
@@ -22,24 +22,24 @@ export default function Leaderboard() {
     return (
         <div className="Leaderboard">
         <h1>Top Rated Games</h1>
-        <div className="leaderboardcolumns" style={{display:'flex',justifyContent:'space-evenly'}}>
-        <ol style={{listStylePosition: 'inside'}}>
+        <div className="leaderboardcolumns">
+        <ol>
         <h2>Action</h2>
         {topGames.action}
         </ol>
-        <ol style={{listStylePosition: 'inside'}}>
+        <ol >
         <h2>Indie</h2>
         {topGames.indie}
         </ol>
-        <ol style={{listStylePosition: 'inside'}}>
+        <ol>
         <h2>Adventure</h2>
         {topGames.adventure}
         </ol>
-        <ol style={{listStylePosition: 'inside'}}>
+        <ol >
         <h2>RPG</h2>
         {topGames.rpg}
         </ol>
-        <ol style={{listStylePosition: 'inside'}}>
+        <ol >
         <h2>Shooter</h2>
         {topGames.shooter}
         </ol>
