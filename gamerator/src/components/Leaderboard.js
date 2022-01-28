@@ -4,17 +4,20 @@ export default function Leaderboard() {
     const [topGames, setTopGames] = useState([]);
 
     useEffect( () => {
-        fetch(`http://${process.env.REACT_APP_HOSTNAME}:8080/leaderboard`)
+        fetch(`http://${process.env.REACT_APP_HOSTNAME}/leaderboard`)
        .then(res => res.json())
        .then((result) => {
            let arr = {}
            for(let genre in result)
            {
             let temp = result[genre]
-            arr[genre] = temp.map((element)=><li><em style={{fontSize:'1.2em',fontWeight:'bold'}}>{element.gameName}</em><br></br>
+            arr[genre] = temp.map((element)=><li><em style={{fontSize:'1.5em',fontWeight:'bold'}}>{element.gameName}</em><br></br><br></br>
            Metacritic rating: {element.metaRating!=='null'?element.metaRating:'N/A'}<br></br>
            RAWG rating: {element.userRating}<br></br>
-           <strong>Our rating: {element.numVotes} user(s) voted {element.ourScore} stars</strong><br></br><br></br><br></br></li>)
+           <h3>Our Rating: {element.ourScore} </h3>out of {element.numVotes} user review(s)
+           <br></br><br></br>
+           ---------------------------------
+           <br></br><br></br></li>)
            }
            setTopGames(arr)})
      }, [])
@@ -24,23 +27,23 @@ export default function Leaderboard() {
         <h1 className="leaderHeader">Top Rated Games</h1>
         <div className="leaderboardcolumns">
         <ol>
-        <h2>Action</h2>
+        <h1>Action</h1>
         {topGames.action}
         </ol>
         <ol >
-        <h2>Indie</h2>
+        <h1>Indie</h1>
         {topGames.indie}
         </ol>
         <ol>
-        <h2>Adventure</h2>
+        <h1>Adventure</h1>
         {topGames.adventure}
         </ol>
         <ol >
-        <h2>RPG</h2>
+        <h1>RPG</h1>
         {topGames.rpg}
         </ol>
         <ol >
-        <h2>Shooter</h2>
+        <h1>Shooter</h1>
         {topGames.shooter}
         </ol>
         </div>

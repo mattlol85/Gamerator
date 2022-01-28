@@ -5,7 +5,12 @@ import './styles/FrontPage.css';
 export default function StartPage(props){
 
 async function handleLogin(data){
-  await fetch(`http://localhost:8080/user/${data.profileObj.email}`,{method:'POST'})
+  await fetch(`http://${process.env.REACT_APP_HOSTNAME}/user`,{method:'POST',body: JSON.stringify({
+    token: data.tokenId,
+  }),
+  headers: {
+    'Content-Type': 'application/json',
+  }})
   localStorage.setItem('loginState','true')
   localStorage.setItem('userId',data.profileObj.email)
   props.SetLoginStatus('true')
