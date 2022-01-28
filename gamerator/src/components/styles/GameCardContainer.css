@@ -1,12 +1,4 @@
-button{
-	border-radius: 6px;
-	border-width: 1px;
-	margin: 1px;
-	cursor: pointer;
-}
-button:hover{
-	background-color: #e6784a;
-}
+
 .data{
 	
 	display: flex;

@@ -10,9 +10,9 @@ body{
     justify-content: space-around;
     align-items: center;
     background-color: black;
-    border-color: #e6784a;
-    border: solid;
+     border-bottom: 5px solid;
     border-width: 2px;
+    border-color: #e6784a;
     color: white;
     padding: 40px;
     

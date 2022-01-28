@@ -21,11 +21,11 @@ export default function GameCard(props) {
         <h3 className="rating"> {props.gameData.esrbRating} / {props.gameData.genres}</h3>
         <h3 className="genre"> </h3> {/*moved genre to make space in the card for the buttons*/}
         <h4 className="rating"> Metacritic rating: {props.gameData.metaRating != 'null' ? props.gameData.metaRating : 'N/A'} / RAWG rating: {props.gameData.userRating}</h4>
-        <button onClick={() => rateGame(1, props.gameData.id, user)}>1</button>
-        <button onClick={() => rateGame(2, props.gameData.id, user)}>2</button>
-        <button onClick={() => rateGame(3, props.gameData.id, user)}>3</button>
-        <button onClick={() => rateGame(4, props.gameData.id, user)}>4</button>
-        <button onClick={() => rateGame(5, props.gameData.id, user)}>5</button>
+        <button className="btn" onClick={() => rateGame(1, props.gameData.id, user)}>1</button>
+        <button className="btn" onClick={() => rateGame(2, props.gameData.id, user)}>2</button>
+        <button className="btn" onClick={() => rateGame(3, props.gameData.id, user)}>3</button>
+        <button className="btn" onClick={() => rateGame(4, props.gameData.id, user)}>4</button>
+        <button className="btn" onClick={() => rateGame(5, props.gameData.id, user)}>5</button>
     </div>
   );
 }
