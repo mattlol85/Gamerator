@@ -29,7 +29,6 @@ return(
     <br />
      <GoogleLogin
     clientId={process.env.REACT_APP_GOOGLEID}
-    buttonText="Login"
     buttonText="Log in using Google"
     onSuccess={handleLogin}
     onFailure={handleFailure}

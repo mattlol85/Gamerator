@@ -1,12 +1,10 @@
 import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import "./styles/Navbar.css";
+import { UserEmail } from '../App'
 
 export default function Navbar(props) {
-
-  const [loggedIn,SetLoginStatus] = useState(localStorage.getItem('loginState')?localStorage.getItem('loginState'):'false')
-  const [currentUser,SetUser] = useState(localStorage.getItem('userId')?localStorage.getItem('userId'):'null')
-  
+  var user = React.useContext(UserEmail)
   async function logOutHandler(){
     localStorage.setItem('loginState','false')
     localStorage.setItem('userId','null')
@@ -46,9 +44,9 @@ export default function Navbar(props) {
       <Link className="rpg" to="/Rpg">
         RPG
       </Link >
-      <button id='logoutBtn' onClick={logOutHandler}>LOGOUT
-      </button>
-      
+      <div>
+      <button className='logoutBtn' onClick={logOutHandler}>LOGOUT
+      </button><p>{user}</p></div>
     
     </nav>
   );
