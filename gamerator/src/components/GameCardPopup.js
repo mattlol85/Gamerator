@@ -26,25 +26,24 @@ export default function GameCardPopup(props) {
       }
     
     return (
-        <div class="bigCard">
+        <div className="bigCard">
 
-            <div id='col'>
+            <div className='col'>
                 <Popup trigger={<img id='bigCardImg' src={props.gameData.backgroundImg} />} closeOnDocumentClick><img className="popupBigImg" src={props.gameData.backgroundImg} height="60%" width="60%"></img></Popup>
                 <br></br><br></br>
                 <p><strong>{props.gameData.genres.join('/ ')}</strong></p>
                 <p>Released: {date}</p>
                 {props.gameData.developer!==''?<p>Created by: {props.gameData.developer}</p>:<p></p>}
                 {props.gameData.publisher!==''?<p>Published by: {props.gameData.publisher}</p>:<p></p>}
+                {props.gameData.esrbRating!==''?<p>ESRB Rating: {props.gameData.esrbRating}</p>:<p></p>}
                 <a href={props.gameData.website}>Game Website</a><br></br>
                 {props.gameData.subreddit!==''?<a href={props.gameData.subreddit}>Game Reddit</a>:<p></p>}
-                <h2>Metacritic Score:</h2>
-                <h3>{props.gameData.metaRating} out of 5</h3>
-                <h2>RAWG Score:</h2>
-                <h3>{props.gameData.userRating} out of 5</h3>
-                <h4>from {props.gameData.numUserRatings} user reviews</h4>
+                <h3>Metacritic Score: {props.gameData.metaRating}</h3>
+                <h3>RAWG Score:</h3>
+                <p><strong>{props.gameData.userRating} out of 5</strong> | from {props.gameData.numUserRatings} user reviews</p>
                 
             </div>
-            <div id='col'>
+            <div className='col'>
             <h1>{props.gameData.gameName}</h1>
                 <h2>Description</h2>
                 <p id="gameDesc">
@@ -58,7 +57,7 @@ export default function GameCardPopup(props) {
                     <button className='btnClass' onClick={() => rateGame(5, props.gameData.id, user)}><img src={star5} /></button>
                 </p>
             </div>
-            <div id='col'>
+            <div className='col'>
                 <h2>Screenshots</h2>
                 {props.gameData.images.slice(1).map((element)=><Popup trigger={<img className="screenshots" src={element} height="17%" width="70%"></img>} closeOnDocumentClick><img className="popupScreenshot" src={element} height="50%" width="50%"></img></Popup>)}
             </div>
