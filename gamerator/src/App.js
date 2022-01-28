@@ -29,7 +29,6 @@ const [currentUser,SetUser] = useState(localStorage.getItem('userId')?localStora
         <Route path="/" element={loggedIn==='true'?<Navigate to="/home"/>:<FrontPage SetUser={SetUser} SetLoginStatus={SetLoginStatus}/>}></Route>
         <Route path="/home" element={loggedIn==='false'?<Navigate to="/"/>:
         <><Navbar SetUser={SetUser} SetLoginStatus={SetLoginStatus} />
-        <h1 id='welcomeUser'>Welcome {currentUser}!</h1>
         <Home /></>} />
         <Route path="/action" element={loggedIn ==='false'?<Navigate to="/"/>:<><Navbar SetUser={SetUser} SetLoginStatus={SetLoginStatus} /><Action /></>} />
         <Route path="/adventure" element={loggedIn ==='false'?<Navigate to="/"/>:<><Navbar SetUser={SetUser} SetLoginStatus={SetLoginStatus} /><Adventure /></>} />

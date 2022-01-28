@@ -9,9 +9,9 @@ export default function Home() {
         <div className="homePage">
             <div id="homeContent" >
                 <div className="about">
-                <h2>🎮Welcome To Gamerator</h2>
+                <h2>🎮Welcome</h2>
                 <h3>Gamerator is a place where gamers can come together and see
-                once and for all if the top games really stand the test of the *current* times. Gamerator strides
+                once and for all if the top games really stand the test of the <i>current</i> times. Gamerator strides
                 to be #1 when it comes to ultra small-scale applications.</h3>
                 </div>
                 <br/>
