@@ -13,7 +13,7 @@ export default function GameCard(props) {
   }
 
   return (
-    <div className="data">
+    <div >
         <img src={props.gameData.backgroundImg} className="imgCard" />
         <h2 className="header">{props.gameData.gameName} </h2>
         <div className="cardPlacement">

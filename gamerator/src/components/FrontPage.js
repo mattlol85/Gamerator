@@ -28,13 +28,13 @@ return(
     {/* <div className="Logo"> Welcome to GameRater</div> */}
     <h1 className="animate">Welcome to GamerRater!</h1>
     <h2 className="log"> Log in </h2>
-     <GoogleLogin
+    <GoogleLogin
     clientId={process.env.REACT_APP_GOOGLEID}
     buttonText="Login"
     buttonText="Log in using Google"
       onSuccess={handleLogin}
       onFailure={handleFailure}
-  />
+    />
     </div>
 
 )
