@@ -10,13 +10,13 @@ Using the Graw.io API, we are able to seed the database of the latest games, and
  There is another repo required for the server, [Gamerator Server](https://github.com/mattlol85/Gamerator_Server).
  The backend of this application uses Sequelize to utilize our database which is running Postgres.
 
- ### Google Login
+### Google Login
  Google Login is required to gain access to the website. This is to ensure no duplicate votes.
 
 
 
 ### Made By
-- [Matthew Fitzgerald](https://github.com/mattlol85)
-- [Leo Galan](https://github.com/LeonardoGalan)
-- [Fernando Reyes](https://github.com/fernrey)
-- [Ramon Polanco](https://github.com/rmpolanco)
+    - [Matthew Fitzgerald](https://github.com/mattlol85)
+    - [Leo Galan](https://github.com/LeonardoGalan)
+    - [Fernando Reyes](https://github.com/fernrey)
+    - [Ramon Polanco](https://github.com/rmpolanco)
