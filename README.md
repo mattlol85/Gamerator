@@ -16,7 +16,7 @@ Using the Graw.io API, we are able to seed the database of the latest games, and
 
 
 ### Made By
-    - [Matthew Fitzgerald](https://github.com/mattlol85)
-    - [Leo Galan](https://github.com/LeonardoGalan)
-    - [Fernando Reyes](https://github.com/fernrey)
-    - [Ramon Polanco](https://github.com/rmpolanco)
+- [Matthew Fitzgerald](https://github.com/mattlol85)
+- [Leo Galan](https://github.com/LeonardoGalan)
+- [Fernando Reyes](https://github.com/fernrey)
+- [Ramon Polanco](https://github.com/rmpolanco)
