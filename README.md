@@ -12,3 +12,11 @@ Using the Graw.io API, we are able to seed the database of the latest games, and
 
  ### Google Login
  Google Login is required to gain access to the website. This is to ensure no duplicate votes.
+
+
+
+### Made By
+- [Matthew Fitzgerald](https://github.com/mattlol85)
+- [Leo Galan](https://github.com/LeonardoGalan)
+- [Fernando Reyes](https://github.com/fernrey)
+- [Ramon Polanco](https://github.com/rmpolanco)
